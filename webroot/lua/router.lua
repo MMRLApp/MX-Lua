@@ -146,7 +146,7 @@ end
 
 if not App._initialized then
     sort_routes()
-    registerPathHandler(normalize_mount(App.mount), master_handler)
+    webui.registerPathHandler(normalize_mount(App.mount), master_handler)
     App._initialized = true
 end
 
